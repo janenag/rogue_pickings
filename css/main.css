@@ -1,4 +1,7 @@
 /******** GLOBAL STYLES ********/
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -14,37 +17,45 @@ h4 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 h4 {
-    font-size: 12px;
+    font-size: .75em;
 }
 
 p {
+    font-size: 1rem;
     line-height: 36px;
 }
 
 .content-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 /******** HEADER STYLES ********/
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 header h1 {
-    width: 300px;
-    float: left;
+    width: 100%;
     margin: 0;
-    padding: 36px 0px;
+    padding: 38px 0 20px 0;
+    border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -52,24 +63,21 @@ header h1 span {
 }
 
 header nav {
-    width: 300px;
-    float: right;
-    padding: 44px 0;
+    padding: 20px 0;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
-    text-align: right;
+    list-style: none;
 }
 
 header nav ul li {
-    display: inline-block;
-    font-size: 14px;
+    width: 100%;
+    font-size: .875rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
 header nav ul li a {
@@ -80,17 +88,22 @@ header nav ul li a {
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
 .main-image img {
+    width: 100%;
     border-top: 3px solid #77A466;
     border-bottom: 3px solid #77A466;
 }
 
 .main-title h2 {
     color: #45610E;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 5px 0;
 }
 
 /******** BOTTOM SECTION ********/
+.top-section,
+.bottom-section {
+    display: flex;
+    justify-content: center;
+}
 .bottom-section .content-wrapper {
     border-top: 5px solid #EEE;
     border-bottom: 5px solid #EEE;
@@ -100,27 +113,24 @@ header nav ul li a {
 .section-two,
 .section-three {
     box-sizing: border-box;
-    float: left;
-    padding: 0px 40px;
 }
 
 .section-one {
-    width: 350px;
+    width: 100%;
 }
 
 .section-two {
-    width: 500px;
+    width: 100%;
     border-left: 5px solid #EEE;
     border-right: 5px solid #EEE;
 }
 
 .section-three {
-    width: 350px;
+    width: 100%;
 }
 
 .bottom-section h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px 0;
 }
 
 .menu-list {
@@ -129,13 +139,15 @@ header nav ul li a {
 }
 
 .menu-list li {
+    font-size: 1rem;
     line-height: 36px;
     color: #45610E;
 }
 
 /******** FOOTER STYLES ********/
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 8px;
 }
 
@@ -143,5 +155,5 @@ footer span {
     font-family: "Galada", cursive;
     text-transform: lowercase;
     color: #45610E;
-    font-size: 14px;
+    font-size: .875rem;
 }
